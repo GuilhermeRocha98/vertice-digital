@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { submitLead } from "@/services/lead.service";
+import { siteConfig, whatsappHref } from "@/lib/config";
 import { trackLeadStart, trackLeadSubmitted } from "@/lib/tracking";
 import type { LeadSubmissionStatus } from "@/types/lead";
 
@@ -115,17 +116,11 @@ export function LeadForm() {
               Conte um pouco sobre seu negócio e receba uma proposta pensada para sua realidade.
             </p>
 
-            <div className="mt-12 space-y-6 text-[14px] text-white/50">
-              <div>
-                <span className="block text-[12px] uppercase tracking-[0.15em] text-white/30">WhatsApp</span>
-                <a href="https://wa.me/5541999999999" className="mt-2 inline-block text-accent-light transition hover:text-white">
-                  (41) 99999-9999
-                </a>
-              </div>
-              <div>
-                <span className="block text-[12px] uppercase tracking-[0.15em] text-white/30">E-mail</span>
-                <span className="mt-2 inline-block">contato@verticedigital.com.br</span>
-              </div>
+            <div className="mt-12 text-[14px] text-white/50">
+              <span className="block text-[12px] uppercase tracking-[0.15em] text-white/30">WhatsApp</span>
+              <a href={whatsappHref} className="mt-2 inline-block text-accent-light transition hover:text-white">
+                {siteConfig.whatsappDisplay}
+              </a>
             </div>
           </div>
 

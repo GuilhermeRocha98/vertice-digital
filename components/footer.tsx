@@ -1,4 +1,4 @@
-import { siteConfig, contactEmail, videos, whatsappHref } from "@/lib/config";
+import { videos, whatsappHref } from "@/lib/config";
 import { BackgroundVideo } from "@/components/background-video";
 import { VerticeLogo } from "@/components/logo";
 
@@ -8,11 +8,7 @@ const links = [
   { label: "Contato", href: "#contato" },
 ];
 
-const contacts = [
-  { label: "WhatsApp", href: whatsappHref },
-  { label: "Instagram", href: siteConfig.instagramUrl },
-  { label: contactEmail, href: `mailto:${contactEmail}` },
-];
+const contacts = [{ label: "WhatsApp", href: whatsappHref }];
 
 export function Footer() {
   return (

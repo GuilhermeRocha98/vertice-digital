@@ -1,9 +1,9 @@
 export const siteConfig = {
   brand: "Vértice Digital",
   tagline: "Websites profissionais para empresas que querem crescer.",
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "5541999999999",
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "5542998628774",
+  whatsappDisplay: "(42) 99862-8774",
   whatsappMessage: "Olá! Gostaria de saber mais sobre criação de sites.",
-  instagramUrl: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "https://instagram.com",
   leadApiUrl: process.env.NEXT_PUBLIC_LEAD_API_URL ?? "http://localhost:8080/api/leads",
   gaId: process.env.NEXT_PUBLIC_GA_ID ?? "",
   gtmId: process.env.NEXT_PUBLIC_GTM_ID ?? "",
@@ -22,4 +22,3 @@ export const videos = {
 };
 
 export const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber.replace(/\D/g, "")}`;
-export const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contato@verticedigital.com.br";
